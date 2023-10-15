@@ -20,10 +20,10 @@ java_sys_version = re.search(r'"[0-9\._]*"', version.decode().split("\r")[0]).gr
 if java_version:
     print("Found Java version in the file:", java_version)
     if java_version == java_sys_version:
-        print("Java and Python versions are the same.")
+        print("Java and java_sys versions are the same.")
     else:
         print("Java and Python versions are different.")
-        print("Python version:", java_sys_version)
+        print("java_sys version:", java_sys_version)
 else:
     print("Java version not found in the file.")
 
