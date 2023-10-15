@@ -22,7 +22,7 @@ if java_version:
     if java_version == java_sys_version:
         print("Java and java_sys versions are the same.")
     else:
-        print("Java and Python versions are different.")
+        print("Java and java_sys_version versions are different.")
         print("java_sys version:", java_sys_version)
 else:
     print("Java version not found in the file.")
